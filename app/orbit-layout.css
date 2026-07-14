@@ -1,0 +1,9 @@
+.orbit-label { width: 50%; height: 0; }
+.orbit-label b { position: absolute; left: 100%; top: 0; }
+.project-pill, .tech-pill { border-radius: 999px; box-shadow: 0 8px 15px rgba(46,60,121,.12); }
+.project-pill { padding: 9px 14px; font-size: clamp(10px,1.2vw,14px); }
+.tech-pill { padding: 5px 8px; font-size: clamp(7px,.8vw,10px); font-family: var(--font-geist-mono); }
+.project-pill.cool, .tech-pill.blue { background: #315bff; color: white; }
+.project-pill.warm, .tech-pill.yellow { background: #f9bf46; color: #282549; }
+.tech-pill.pink { background: #ed5d92; color: white; }
+.tech-pill.purple { background: #9670ec; color: white; }

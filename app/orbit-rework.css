@@ -1,0 +1,19 @@
+.orbit-rework { background: #e9eef1; }
+.radial-lab { width: min(75.6vw, 720px); aspect-ratio: 1; position: relative; display: grid; place-items: center; margin-top: 18px; }
+.project-curve { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; animation: radial-spin 90s linear infinite; }
+.project-curve text { fill: #243b55; font: 700 clamp(25px, 3.1vw, 32px) var(--font-geist-mono); letter-spacing: 1.7px; }
+.ring-label { position: absolute; top: 9%; left: 50%; transform: translateX(-50%); font: 10px var(--font-geist-mono); letter-spacing: .17em; color: #66829a; white-space: nowrap; }
+.radial-ring { position: absolute; inset: 0; width: 100%; height: 100%; animation: radial-spin 68s linear infinite; pointer-events: none; }
+.radial-ring.ccw { animation-direction: reverse; animation-duration: 54s; }
+.ring-tool { position: absolute; left: 50%; top: 50%; display: inline-flex; align-items: center; gap: 7px; color: #3e5a70; white-space: nowrap; transition: color .16s ease; pointer-events: auto; }
+.ring-tool svg { width: 21px; height: 21px; flex: 0 0 auto; color: inherit; fill: currentColor; }
+.ring-tool b { font: 700 13px var(--font-geist-mono); letter-spacing: .03em; }
+.radial-ring.inner .ring-tool { gap: 5px; }
+.radial-ring.inner .ring-tool svg { width: 17px; height: 17px; }
+.radial-ring.inner .ring-tool b { font-size: 11px; }
+.ring-tool:hover, .ring-tool:hover svg, .ring-tool:hover b { color: var(--brand); }
+.radial-core { position: relative; z-index: 2; width: 19%; aspect-ratio: 1; border-radius: 50%; background: #142336; color: #f7f8f6; display: grid; place-content: center; text-align: center; font: 600 clamp(11px,1.4vw,17px) var(--font-geist); line-height: 1.05; letter-spacing: -.06em; box-shadow: none; }
+.radial-core em { color: #b7cad9; font-style: normal; }
+.radial-core small { display: block; margin-top: 8px; font: 8px var(--font-geist-mono); color: #9db1c1; letter-spacing: .07em; }
+@keyframes radial-spin { to { rotate: 360deg; } }
+@media (max-width: 760px) { .radial-lab { width: min(100.8vw, 495px); }.project-curve text { font-size: clamp(17px, 5.2vw, 24px); letter-spacing: 1px; }.ring-tool { gap: 4px; }.ring-tool svg { width: 14px; height: 14px; }.ring-tool b { font-size: 8px; }.radial-ring.inner .ring-tool svg { width: 12px; height: 12px; }.radial-ring.inner .ring-tool b { font-size: 7px; }.radial-core { width: 21%; } }

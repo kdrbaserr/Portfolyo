@@ -1,0 +1,46 @@
+:root { --ink: #172235; --paper: #f6f7f5; --blue: #3d6388; --pink: #3d6388; --yellow: #b8c6d2; --purple: #3d6388; }
+body { font-family: var(--font-geist), Arial, sans-serif; }
+.hero-shell, .contact-section, footer { background: #111a27; }
+.hero-shell:before { background: radial-gradient(circle, rgba(61,99,136,.28), transparent 65%); }
+.hero-copy h1 { font-family: var(--font-geist), Arial, sans-serif; font-size: clamp(72px, 9.2vw, 150px); letter-spacing: -.085em; }
+.hero-copy h1 em { font-family: inherit; font-style: normal; font-weight: 300; color: #9fb4c8; }
+.hero-role span, .portrait-note b, .about-story strong { color: #52779a; }
+.primary-button { background: #b7cad9; color: #111a27; }
+.portrait-wrap { width: min(31vw, 380px); height: auto; aspect-ratio: 1; justify-self: center; border-radius: 0; box-shadow: none; background: #d9dde0; }
+.portrait { top: 28px !important; height: calc(100% - 28px) !important; object-position: center top !important; }
+.browser-chrome { position: absolute; inset: 0 0 auto; z-index: 4; height: 28px; display: flex; align-items: center; gap: 12px; padding: 0 9px; background: rgba(19,29,42,.86); color: #d9e0e5; font: 8px var(--font-geist-mono); letter-spacing: .02em; backdrop-filter: blur(8px); }
+.window-controls { display: flex; gap: 5px; }
+.window-controls i { display: block; width: 8px; height: 8px; border-radius: 50%; }
+.window-controls i:nth-child(1) { background: #ff5f57; }.window-controls i:nth-child(2) { background: #febc2e; }.window-controls i:nth-child(3) { background: #28c840; }
+.portrait { filter: grayscale(1) contrast(1.05); transition: filter .45s ease, transform .65s ease; }
+.portrait-wrap:hover .portrait { filter: grayscale(0); transform: scale(1.02); }
+.portrait-note { background: rgba(250,250,248,.94); }
+.portrait-note span { white-space: pre-line; }
+.nav-tools { display: flex; align-items: center; gap: 10px; }
+.language-switch { cursor: pointer; border: 1px solid rgba(255,255,255,.18); background: transparent; color: #9faec0; border-radius: 99px; font: 10px var(--font-geist-mono); padding: 10px 11px; letter-spacing: .06em; }
+.language-switch b { color: white; font-weight: 500; }
+.language-switch span { margin: 0 3px; opacity: .5; }
+.tech-strip { overflow: hidden; background: #eeefeb; border-block: 1px solid #d4d7d7; padding: 19px 0; }
+.tech-track { width: max-content; display: flex; align-items: center; animation: marquee 55s linear infinite; }
+.tech-logo { display: flex; align-items: center; gap: 11px; padding-left: 34px; font: 11px var(--font-geist-mono); letter-spacing: .13em; color: #253448; white-space: nowrap; }
+.tech-logo svg { width: 22px; height: 22px; }
+.tech-logo i { margin-left: 25px; font-size: 18px; font-style: normal; color: #7894ab; }
+.tech-strip:hover .tech-track { animation-play-state: paused; }
+.about-section, .specialty-section { background: #f6f7f5; }
+.about-heading em, .section-heading em, .contact-section em { color: #52779a; font-family: inherit; font-style: normal; }
+.about-story { background: #fff; box-shadow: 0 14px 45px rgba(25,36,51,.06); }
+.orbit-section { background: #e9eef1; }
+.orbit-aura { background: radial-gradient(circle, rgba(184,198,210,.7), rgba(255,255,255,.45) 38%, transparent 70%); }
+.outer-orbit { border-color: rgba(61,99,136,.42); }
+.inner-orbit { border-color: rgba(61,99,136,.34); }
+.project-pill.cool, .tech-pill.blue, .tech-pill.pink, .tech-pill.purple { background: #3d6388; color: white; }
+.project-pill.warm, .tech-pill.yellow { background: #c5d0d9; color: #172235; }
+.projects-section { background: #e7ecef; }
+.section-heading > p { color: #52779a; }
+.project-card.blue, .project-card.pink, .project-card.yellow { background: #fbfcfb; color: #172235; }
+.project-card.purple { background: #d8e2e8; color: #172235; }
+.project-card { box-shadow: none; border: 1px solid #d4dce0; }
+.project-card:hover { box-shadow: 0 16px 30px rgba(31,51,71,.1); }
+.contact-section h2 em { color: #b7cad9; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+@media (max-width: 760px) { .nav-contact { display: none; }.language-switch { padding: 8px 9px; }.tech-logo { padding-left: 24px; }.portrait-wrap { width: min(76vw, 330px); height: auto; aspect-ratio: 1; justify-self: center; } }
