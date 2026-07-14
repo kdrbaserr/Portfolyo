@@ -10,6 +10,9 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   title: "Kadir Başer — Yazılım Mühendisi & MLOps Tutkunu",
   description: "Kadir Başer'in MLOps, yapay zeka ve full-stack geliştirme portfolyosu.",
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

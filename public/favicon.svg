@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="KB logo">
+  <rect width="64" height="64" rx="16" fill="#0f172a"/>
+  <rect x="10" y="10" width="44" height="44" rx="11" fill="none" stroke="#7dd3fc" stroke-width="2"/>
+  <path d="M21 20h10c6 0 10 3 10 8 0 5-4 8-10 8H21z" fill="#ffffff"/>
+  <path d="M21 20v24" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M41 20h8v24h-8z" fill="#7dd3fc"/>
+</svg>
